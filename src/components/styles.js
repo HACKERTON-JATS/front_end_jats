@@ -1,5 +1,11 @@
 import styled from "styled-components";
 
+export const Global = styled.section`
+    width: 140%;
+    display: flex;
+    overflow: scroll;
+`
+
 export const Wrapper = styled.div`
     display: flex;
 `
@@ -7,7 +13,6 @@ export const Wrapper = styled.div`
 export const Logo = styled.img`
     width: 50%;
     transition: 1s linear;
-    margin-top: ${({ loc }) => loc};
     opacity: ${({ opc }) => opc};
 `
 
@@ -16,8 +21,7 @@ export const SigninWrp = styled.div`
     flex-direction: column;
     margin-left: 50px;
     transition: 1s linear; 
-    transition-delay: 1s;
-    margin-top: ${({ sloc }) => sloc};
+    transition-delay: 0.6s;
     opacity: ${({ sopc }) => sopc};
 `
 
@@ -63,11 +67,16 @@ export const Btn = styled.button`
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 25px;
     color: #fff;
+    cursor: pointer;
     margin-top: 30px;
 `
 
+export const GoSignup = styled.p`
+    margin-left: 20px;
+`
+
 export const Signup = styled.p`
-    margin-left: 30px;
+    margin-left: -45%;
 `
 
 export const ToSignup = styled.a`
@@ -96,9 +105,63 @@ export const Title = styled.div`
 
 export const GoSignin = styled.p`
     margin-top: 30px;
+    margin-left: -45%;
 `
 
 export const ToSignin = styled.a`
     text-decoration: underline;
     color: #7ECBFC;
+    cursor: pointer;
+`
+
+export const DetailWrp = styled.div`
+    display:flex;
+    flex-direction: column;
+    transition: 1s linear; 
+    transition-delay: 0.6s;
+    opacity: ${({ sopc }) => sopc};
+`
+
+export const Name = styled.input`
+    width: 500px; 
+    height: 60px;
+    border-radius: 15px;
+    border: 1px solid #BCBCBC;
+    margin-top: 50px;
+    text-indent: 25px;
+`
+
+
+export const DetailInp = styled.div`
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin-top: 50px; */
+`
+
+export const Region = styled.select`
+    width: 100%;
+    height: 60px;
+    border-radius: 15px;
+    border: 1px solid #BCBCBC;
+    color: #585858;
+    font-size: 20px;
+    outline: none;
+    text-indent: 20px;
+    margin-top: 50px;
+`
+
+export const SignBtn = styled.button`
+    width: 450px;
+    height: 40px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-weight: 250;
+    background: #B5B5B5;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 25px;
+    color: #fff;
+    margin-top: 30px;
 `
