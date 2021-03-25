@@ -6,13 +6,19 @@ export const Wrapper = styled.div`
 
 export const Logo = styled.img`
     width: 50%;
-    transition: 0.3s linear;
+    transition: 1s linear;
+    margin-top: ${({ loc }) => loc};
+    opacity: ${({ opc }) => opc};
 `
 
 export const SigninWrp = styled.div`
     display: flex;
     flex-direction: column;
     margin-left: 50px;
+    transition: 1s linear; 
+    transition-delay: 1s;
+    margin-top: ${({ sloc }) => sloc};
+    opacity: ${({ sopc }) => sopc};
 `
 
 export const Signin = styled.p`
@@ -65,6 +71,34 @@ export const Signup = styled.p`
 `
 
 export const ToSignup = styled.a`
+    text-decoration: underline;
+    color: #7ECBFC;
+`
+
+export const Next = styled.img`
+    width: 40px;
+    margin-top: 50px;
+    cursor: pointer;
+`
+
+export const Half = styled.p`
+    margin-bottom: 0;
+    color: #848484;
+    font-size: 30px;
+
+`
+
+export const Title = styled.div`
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+`
+
+export const GoSignin = styled.p`
+    margin-top: 30px;
+`
+
+export const ToSignin = styled.a`
     text-decoration: underline;
     color: #7ECBFC;
 `
