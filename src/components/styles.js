@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
 export const Global = styled.section`
-    width: 140%;
+    width: 100%;
     display: flex;
-    overflow: scroll;
+    overflow: hidden;
 `
 
 export const Wrapper = styled.div`
@@ -23,6 +23,7 @@ export const SigninWrp = styled.div`
     transition: 1s linear; 
     transition-delay: 0.6s;
     opacity: ${({ sopc }) => sopc};
+    width: 50%;
 `
 
 export const Signin = styled.p`
@@ -36,7 +37,7 @@ export const SigninInp = styled.div`
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: baseline;
     margin-top: 50px;
 `
 
@@ -76,7 +77,7 @@ export const GoSignup = styled.p`
 `
 
 export const Signup = styled.p`
-    margin-left: -45%;
+
 `
 
 export const ToSignup = styled.a`
@@ -88,13 +89,14 @@ export const Next = styled.img`
     width: 40px;
     margin-top: 50px;
     cursor: pointer;
+    margin-left: 35%;
 `
 
 export const Half = styled.p`
     margin-bottom: 0;
     color: #848484;
     font-size: 30px;
-
+    margin-right: 20%;
 `
 
 export const Title = styled.div`
@@ -105,7 +107,6 @@ export const Title = styled.div`
 
 export const GoSignin = styled.p`
     margin-top: 30px;
-    margin-left: -45%;
 `
 
 export const ToSignin = styled.a`
@@ -164,4 +165,12 @@ export const SignBtn = styled.button`
     font-size: 25px;
     color: #fff;
     margin-top: 30px;
+`
+
+export const DeWrapper = styled.section`
+    position: absolute;
+    right: 11.5%;
+    transition: 1s linear;
+    opacity: ${({ deo }) => deo};
+    z-index: ${({ zin }) => zin};
 `

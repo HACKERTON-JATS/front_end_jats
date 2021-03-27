@@ -9,6 +9,8 @@ const Signup = () => {
 
     const [opc, setOpc] = useState("0");
     const [sopc, setSopc] = useState("0");
+    const [zin, setZin] = useState("-1");
+    const [deo, setDeo] = useState("0");
 
     useEffect(() => {
         setOpc("1");
@@ -17,6 +19,14 @@ const Signup = () => {
     useEffect(() => {
         setSopc("1");
     }, []);
+
+    function ChageRender() {
+        setSopc("0");
+        setZin("1");
+        setDeo("1");
+    }
+
+
 
     return (
         <S.Global>
@@ -30,7 +40,7 @@ const Signup = () => {
                     <S.SigninInp>
                         <S.Id placeholder="enter your email or Id" />
                         <S.Pw placeholder="enter your password" />
-                        <NavLink to="/SignupDetail"><S.Next src={Next}></S.Next></NavLink>
+                        <S.Next onClick={ChageRender} src={Next}></S.Next>
                         <S.GoSignin>If you have account <NavLink to="/Signin">Click here</NavLink></S.GoSignin>
                     </S.SigninInp>
                 </S.SigninWrp>

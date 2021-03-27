@@ -2,18 +2,21 @@ import * as S from "../styles";
 import Logo from "../../assets/logo.png";
 import { useState, useEffect } from "react";
 
-const SignupDetail = () => {
+const SignupDetail = ({ zin, deo }) => {
 
     const [sopc, setSopc] = useState("0");
+
 
     useEffect(() => {
         setSopc("1");
     }, []);
 
+
+
     return (
-        <S.Wrapper>
+        <S.DeWrapper zin={zin} deo={deo}>
             <S.DetailWrp sopc={sopc}>
-                <S.Signin>SignUp</S.Signin>
+                <S.Signin>Signup</S.Signin>
                 <S.DetailInp>
                     <S.Name placeholder="enter your name" />
                     <S.Region>
@@ -27,10 +30,10 @@ const SignupDetail = () => {
                         <option value="Jejudo">Jejudo</option>
                     </S.Region>
                     <S.SignBtn>Signup</S.SignBtn>
-                    <S.Signup>If you don't have account <S.ToSignup>Click here</S.ToSignup></S.Signup>
+                    {/* <S.Signup>If you have account <S.ToSignup>Click here</S.ToSignup></S.Signup> */}
                 </S.DetailInp>
             </S.DetailWrp>
-        </S.Wrapper >
+        </S.DeWrapper >
     )
 }
 
