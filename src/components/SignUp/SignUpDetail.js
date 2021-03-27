@@ -14,26 +14,24 @@ const SignupDetail = ({ zin, deo }) => {
 
 
     return (
-        <S.DeWrapper zin={zin} deo={deo}>
-            <S.DetailWrp sopc={sopc}>
-                <S.Signin>Signup</S.Signin>
-                <S.DetailInp>
-                    <S.Name placeholder="enter your name" />
-                    <S.Region>
-                        <option value="Daejeon">Daejeon</option>
-                        <option value="Seoul">Seoul</option>
-                        <option value="Incheon">Incheon</option>
-                        <option value="Busan">Busan</option>
-                        <option value="Ulsan">Ulsan</option>
-                        <option value="Gwangju">Gwangju</option>
-                        <option value="Daegu">Daegu</option>
-                        <option value="Jejudo">Jejudo</option>
-                    </S.Region>
-                    <S.SignBtn>Signup</S.SignBtn>
-                    {/* <S.Signup>If you have account <S.ToSignup>Click here</S.ToSignup></S.Signup> */}
-                </S.DetailInp>
-            </S.DetailWrp>
-        </S.DeWrapper >
+        <S.DetailWrp sopc={sopc}>
+            <S.Signin>Signup</S.Signin>
+            <S.DetailInp>
+                <S.Name placeholder="enter your name" />
+                <S.Region>
+                    <option value="Daejeon">Daejeon</option>
+                    <option value="Seoul">Seoul</option>
+                    <option value="Incheon">Incheon</option>
+                    <option value="Busan">Busan</option>
+                    <option value="Ulsan">Ulsan</option>
+                    <option value="Gwangju">Gwangju</option>
+                    <option value="Daegu">Daegu</option>
+                    <option value="Jejudo">Jejudo</option>
+                </S.Region>
+                <S.SignBtn>Signup</S.SignBtn>
+                {/* <S.Signup>If you have account <S.ToSignup>Click here</S.ToSignup></S.Signup> */}
+            </S.DetailInp>
+        </S.DetailWrp>
     )
 }
 

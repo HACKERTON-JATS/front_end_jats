@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
 export const Global = styled.section`
-    width: 100%;
-    display: flex;
-    overflow: hidden;
+    width: 140%;
+    display: grid;
+    grid: '. .';
 `
 
 export const Wrapper = styled.div`
@@ -134,15 +134,12 @@ export const Name = styled.input`
 
 
 export const DetailInp = styled.div`
-    width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    /* margin-top: 50px; */
 `
 
 export const Region = styled.select`
-    width: 100%;
+    width: 500px;
     height: 60px;
     border-radius: 15px;
     border: 1px solid #BCBCBC;
@@ -168,9 +165,5 @@ export const SignBtn = styled.button`
 `
 
 export const DeWrapper = styled.section`
-    position: absolute;
-    right: 11.5%;
-    transition: 1s linear;
-    opacity: ${({ deo }) => deo};
-    z-index: ${({ zin }) => zin};
+    
 `
