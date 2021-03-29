@@ -24,6 +24,7 @@ export const SigninWrp = styled.div`
     transition-delay: 0.6s;
     opacity: ${({ sopc }) => sopc};
     width: 50%;
+    position: ${({ pos }) => pos};
 `
 
 export const Signin = styled.p`
@@ -89,7 +90,7 @@ export const Next = styled.img`
     width: 40px;
     margin-top: 50px;
     cursor: pointer;
-    margin-left: 35%;
+    margin-left: 45%;
 `
 
 export const Half = styled.p`
@@ -107,6 +108,7 @@ export const Title = styled.div`
 
 export const GoSignin = styled.p`
     margin-top: 30px;
+    margin-left: 5%;
 `
 
 export const ToSignin = styled.a`

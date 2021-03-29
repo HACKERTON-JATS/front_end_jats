@@ -9,8 +9,7 @@ const Signup = () => {
 
     const [opc, setOpc] = useState("0");
     const [sopc, setSopc] = useState("0");
-    const [zin, setZin] = useState("-1");
-    const [deo, setDeo] = useState("0");
+    const [pos, setPos] = useState("unset");
 
     useEffect(() => {
         setOpc("1");
@@ -22,31 +21,30 @@ const Signup = () => {
 
     function ChageRender() {
         setSopc("0");
-        setZin("1");
-        setDeo("1");
+        setz
+        setPos("absolute");
     }
 
 
 
     return (
-        <S.Global>
-            <S.Wrapper>
-                <S.Logo src={Logo} opc={opc} />
-                <S.SigninWrp sopc={sopc}>
-                    <S.Title>
-                        <S.Signin>Signup</S.Signin>
-                        <S.Half>1 / 2</S.Half>
-                    </S.Title>
-                    <S.SigninInp>
-                        <S.Id placeholder="enter your email or Id" />
-                        <S.Pw placeholder="enter your password" />
-                        <S.Next onClick={ChageRender} src={Next}></S.Next>
-                        <S.GoSignin>If you have account <NavLink to="/Signin">Click here</NavLink></S.GoSignin>
-                    </S.SigninInp>
-                </S.SigninWrp>
-            </S.Wrapper>
+        <S.Wrapper>
+            <S.Logo src={Logo} opc={opc} />
+            <S.SigninWrp sopc={sopc} pos={pos}>
+                <S.Title>
+                    <S.Signin>Signup</S.Signin>
+                    <S.Half>1 / 2</S.Half>
+                </S.Title>
+                <S.SigninInp>
+                    <S.Id placeholder="enter your email or Id" />
+                    <S.Pw placeholder="enter your password" />
+                    <S.Next onClick={ChageRender} src={Next}></S.Next>
+                    <S.GoSignin>If you have account <NavLink to="/Signin">Click here</NavLink></S.GoSignin>
+                </S.SigninInp>
+            </S.SigninWrp>
             <SignupDetail />
-        </S.Global>
+        </S.Wrapper>
+
     )
 }
 
