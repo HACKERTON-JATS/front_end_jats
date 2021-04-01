@@ -2,9 +2,10 @@ import * as S from "../styles";
 import Logo from "../../assets/logo.png";
 import { useState, useEffect } from "react";
 
-const SignupDetail = () => {
+const SignupDetail = ({ trans }) => {
 
     const [sopc, setSopc] = useState("0");
+
 
 
 
@@ -15,7 +16,7 @@ const SignupDetail = () => {
 
 
     return (
-        <S.DetailWrp sopc={sopc} >
+        <S.DetailWrp sopc={sopc} trans={trans}  >
             <S.Signin>Signup</S.Signin>
             <S.DetailInp>
                 <S.Name placeholder="enter your name" />

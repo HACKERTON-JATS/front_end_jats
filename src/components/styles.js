@@ -17,14 +17,13 @@ export const Logo = styled.img`
 `
 
 export const SigninWrp = styled.div`
-    display: flex;
+    display: ${({ dis }) => dis};
     flex-direction: column;
     margin-left: 50px;
     transition: 1s linear; 
     transition-delay: 0.6s;
     opacity: ${({ sopc }) => sopc};
     width: 50%;
-    position: ${({ pos }) => pos};
 `
 
 export const Signin = styled.p`
@@ -120,9 +119,9 @@ export const ToSignin = styled.a`
 export const DetailWrp = styled.div`
     display:flex;
     flex-direction: column;
-    transition: 1s linear; 
-    transition-delay: 0.6s;
+    transition: 0.5s linear; 
     opacity: ${({ sopc }) => sopc};
+    transform: translateX(${({ trans }) => trans});
 `
 
 export const Name = styled.input`
