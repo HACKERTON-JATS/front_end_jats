@@ -1,8 +1,16 @@
-import Signup from './components/SignUp/Signup';
+import FeedMain from "./components/Feed/FeedMain";
 
 function App() {
   return (
-    <Signup />
+    <>
+      {
+        [...Array(10)].map((i, index) => {
+          return (
+            <FeedMain />
+          )
+        })
+      }
+    </>
   );
 }
 
