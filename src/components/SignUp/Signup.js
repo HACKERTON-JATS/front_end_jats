@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import Next from "../../assets/next.png"
 import * as S from "../styles";
 import { NavLink } from "react-router-dom";
-import SignupDetail from "./SignupDetail";
+import SignupDetail from "./SignUpDetail";
 
 const Signup = () => {
 
