@@ -9,6 +9,7 @@ export const FeedWrapper = styled.div`
     &:nth-of-type(1){
         margin-top: 200px;
     }
+    background: #fff;
 `
 
 export const Wrapper = styled.div`
