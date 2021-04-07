@@ -6,6 +6,9 @@ export const FeedWrapper = styled.div`
     border: 1px solid #99ade0;
     border-radius: 10px;
     box-shadow: 6px 4px 6px #969696;
+    &:nth-of-type(1){
+        margin-top: 200px;
+    }
 `
 
 export const Wrapper = styled.div`

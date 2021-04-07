@@ -7,6 +7,8 @@ export const Wrapper = styled.div`
     position: fixed;
     width: 100%;
     z-index: 1;
+    background: #fff;
+    box-shadow: 0px 2px 6px #969696;
 `
 
 export const LogoShape = styled.img`

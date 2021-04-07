@@ -4,11 +4,15 @@ export const HeaderWrapper = styled.header`
     width: 100%;
     height: 100px;
     border-bottom: 1px solid #99ade0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 `
 
 export const HeaderTop = styled.div`
     display: flex;
     justify-content: space-between;
+    margin-bottom: 10px;
 `
 
 export const Name = styled.p`
@@ -50,7 +54,7 @@ export const PhotoWrapper = styled.div`
 export const BottomWrapper = styled.footer`
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
+    padding: 20px 0px 20px 0px;
 `
 
 export const Good = styled.img`
