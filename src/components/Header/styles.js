@@ -10,6 +10,7 @@ export const Wrapper = styled.div`
     background: #fff;
     box-shadow: 0px 2px 6px #969696;
     opacity: 90%;
+    top: 0;
 `
 
 export const LogoShape = styled.img`

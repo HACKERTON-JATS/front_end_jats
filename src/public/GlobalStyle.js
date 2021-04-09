@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components";
-import Background from "../assets/background.jpeg";
+import Background from "../assets/background.png";
 
 const GlobalStyle = createGlobalStyle`
     body{
@@ -7,7 +7,7 @@ const GlobalStyle = createGlobalStyle`
         background-image: url(${Background});
         background-repeat: no-repeat;
         background-size: cover;
-        padding-bottom: 100px;
+        padding-top: 19px;
     }
     p{
         margin: 0;

@@ -26,3 +26,34 @@ export const AddPhoto = styled.p`
     font-size: 20px;
     margin-top: 30px;
 `
+
+export const ConWrapper = styled.section`
+    width: 100%;
+    display: flex;
+    justify-content: center;
+`
+
+export const ContentForm = styled.form`
+    margin-top: 50px;
+`
+
+export const Title = styled.div`
+
+`
+
+export const Content = styled.div`
+    display: flex;
+    margin-top: 30px;
+`
+
+export const TitleInp = styled.input`
+    width: 160px;
+    height: 25px;
+    margin-left: 37px;
+`
+
+export const ContentInp = styled.textarea`
+    width: 600px;
+    height: 250px;
+    margin-left: 10px;
+`
