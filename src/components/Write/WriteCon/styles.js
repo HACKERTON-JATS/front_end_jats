@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import Plus from "../../../assets/plusPhoto.png";
+
 
 export const PhotoWrapper = styled.div`
     width: 100%;
@@ -17,14 +19,20 @@ export const PhotoChoose = styled.div`
     cursor: pointer;
 `
 
-export const PlusPhoto = styled.img`
-    width: 130px;
+export const PlusPhoto = styled.input`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 170px;
+    background-image: url(${Plus});
 `
 
 export const AddPhoto = styled.p`
     color: #747474;
     font-size: 20px;
     margin-top: 30px;
+    text-align: center;
 `
 
 export const ConWrapper = styled.section`
@@ -44,6 +52,7 @@ export const Title = styled.div`
 export const Content = styled.div`
     display: flex;
     margin-top: 30px;
+    margin-bottom: 50px;
 `
 
 export const TitleInp = styled.input`
