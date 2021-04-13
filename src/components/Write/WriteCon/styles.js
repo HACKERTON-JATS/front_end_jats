@@ -5,6 +5,7 @@ export const PhotoWrapper = styled.div`
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
 `
 
 export const PhotoChoose = styled.div`
@@ -16,6 +17,11 @@ export const PhotoChoose = styled.div`
     align-items: center;
     flex-direction: column;
     cursor: pointer;
+    position: ${({ position }) => position};
+    transform: translateX(${({ transform }) => transform});
+    transition: 1s;
+    /* opacity: ${({ opacity }) => opacity};
+    /* z-index: ${({ zIndex }) => zIndex}; */ */
 `
 
 export const PhotoPlus = styled.input`
@@ -95,4 +101,15 @@ export const SubmitBtn = styled.button`
     background: #d6d6d6;
     cursor: pointer;
     outline: none;
+`
+
+export const PhotoSec = styled.div`
+    transform: translateX(${({ photo }) => photo});
+    transition: 1s;
+`
+
+export const RightArrow = styled.img`
+    position: absolute;
+    right: 20%;
+    cursor: pointer;
 `
